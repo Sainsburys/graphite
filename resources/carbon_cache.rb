@@ -23,6 +23,7 @@ default_action :create
 attribute :name, kind_of: String, name_attribute: true
 attribute :backend, kind_of: [String, Hash], default: 'whisper'
 attribute :config, kind_of: Hash, default: nil
+attribute :sv_timeout, kind_of: Integer, default: nil
 
 def backend_name
   backend.is_a?(Hash) ? backend['name'] : backend
