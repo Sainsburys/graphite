@@ -43,6 +43,7 @@ def manage_runit_service(resource_action)
   runit_service(new_resource.service_name) do
     cookbook "graphite"
     run_template_name "carbon"
+    sv_timeout new_resource.sv_timeout
     default_logger true
     finish_script_template_name "carbon"
     finish true
