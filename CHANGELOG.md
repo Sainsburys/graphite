@@ -3,6 +3,10 @@ Graphite  CHANGELOG
 
 This file is used to list changes made in each version of the graphite cookbook.
 
+## 1.0.5
+
+- Add sv_timeout parameter to carbon cache
+
 ## 1.0.4
 - Syntax and styling updates
 - Use full Twisted version number
